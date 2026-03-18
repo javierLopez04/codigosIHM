@@ -1,0 +1,98 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+
+.titulo {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #6bcf63, #3d8b40);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+
+h2 {
+    margin-top: 20px;
+}
+
+
+.filtros {
+    margin: 20px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #eaeaea;
+}
+
+
+.estado {
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+}
+
+.disponible {
+    background: #2ecc71;
+}
+
+.vencido {
+    background: rgb(229, 118, 118);
+}
+
+.icono {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #4da6ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2d89ef;
+}
