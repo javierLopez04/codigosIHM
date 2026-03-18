@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registrar compra</title>
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+Sistema de Inventario de farmacia
+</header>
+
+<div class="container">
+
+<h2>Registrar compra</h2>
+<div class="info">Registro de ingreso de productos</div>
+
+<div class="row">
+
+<div class="group">
+<label>Fecha</label>
+<input type="date">
+</div>
+
+<div class="group">
+<label>Proveedor</label>
+<input type="text" placeholder="Nombre del proveedor">
+</div>
+
+<div class="group">
+<label>Usuario</label>
+<input type="text" value="Administrador" disabled>
+</div>
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Medicamento</th>
+<th>Cantidad</th>
+<th>Precio compra</th>
+<th>Subtotal</th>
+</tr>
+</thead>
+
+<tbody id="tablaCompra">
+</tbody>
+
+</table>
+
+<div class="total">
+Subtotal: $0 <br>
+IVA: $0 <br>
+<strong>Total compra: <span id="total">$0</span></strong>
+</div>
+
+<br>
+
+<div class="actions">
+<button class="cancel">Cancelar</button>
+<button class="finish">Registrar compra</button>
+</div>
+
+</div>
+
+<script src="app.jsp"></script>
+
+</body>
+</html>
