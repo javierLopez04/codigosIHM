@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Inventario - Farmacia</title>
+
+<!-- link de los iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="pharmacy-header">
+<h1>Sistema de Inventario de farmacia</h1>
+</header>
+
+<!-- Contenedor principal del contenido -->
+<main class="main-container">
+
+<h2 class="title-section">Gestión de Proveedores</h2>
+<!-- Subtitulo de la seccion -->
+
+<div class="top-bar">
+<!-- Barra superior donde esta el boton y el buscador -->
+
+<button class="btn-nuevo-medicamento">+ Nuevo Proveedor</button>
+<!-- Boton para agregar un proveedor nuevo -->
+
+<div class="search-box">
+<!-- Caja del buscador -->
+
+<i class="fa-solid fa-magnifying-glass"></i>
+<!-- Icono de lupa -->
+
+<input type="text" id="searchInput" placeholder="Search">
+<!-- Campo donde el usuario escribe lo que quiere buscar -->
+
+<i class="fa-solid fa-microphone"></i>
+<!-- Icono de microfono -->
+</div>
+
+</div>
+<section class="table-container">
+<!-- Contenedor de la tabla -->
+
+<div id="gridProveedores" class="inventory-grid">
+<!-- Grid donde se van a mostrar los proveedores -->
+
+<div class="header-item">ID</div>
+<div class="header-item">Nombre Empresa</div>
+<div class="header-item">Direccion</div>
+<div class="header-item">Telefono</div>
+<div class="header-item">Estado</div>
+<div class="header-item">Acciones</div>
+<!-- Encabezados de la tabla -->
+
+</div>
+</section>
+</main>
+
+<!-- Template que sirve como molde para crear cada proveedor -->
+<template id="proveedorTemplate">
+
+<div class="cell id-cell"></div>
+<!-- Celda donde se pondra el ID -->
+
+<div class="cell name-cell"></div>
+<!-- Celda donde se pondra el nombre -->
+
+<div class="cell direccion-cell"></div>
+<!-- Celda donde se pondra la direccion -->
+
+<div class="cell telefono-cell"></div>
+<!-- Celda donde se pondra el telefono -->
+
+<div class="cell status-cell"></div>
+<!-- Celda donde se pondra el estado -->
+
+<div class="cell actions-cell">
+<!-- Celda que contiene los botones de acciones -->
+
+<button class="btn-estado"><i class="fa-solid fa-eye"></i></button>
+<!-- Boton para ver -->
+
+<button class="btn-editar"><i class="fa-solid fa-pencil"></i></button>
+<!-- Boton para editar -->
+
+<button class="btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+<!-- Boton para eliminar -->
+
+</div>
+
+</template>
+
+<script src="app.js"></script>
+
+</body>
+</html>

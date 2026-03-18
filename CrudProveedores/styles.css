@@ -1,0 +1,264 @@
+/* VARIABLES */
+:root {
+
+/* Color verde del encabezado */
+--header-green: #2ecc71;
+
+/* Color azul del boton */
+--btn-blue: #5dade2;
+
+/* Color del borde de la tabla */
+--table-border: #a9c7f0;
+
+/* Color gris de las celdas */
+--gray-bg: #d9d9d9;
+
+/* Color del fondo de la pagina */
+--bg-body: #e5e7eb;
+
+}
+
+/* BODY */
+body {
+
+/* Color de fondo de la pagina */
+background-color: var(--bg-body);
+
+/* Tipo de letra */
+font-family: Arial, sans-serif;
+
+/* Quita los margenes por defecto */
+margin: 0;
+
+}
+
+/* HEADER */
+.pharmacy-header {
+
+/* Color del encabezado */
+background-color: var(--header-green);
+
+/* Color del texto */
+color: white;
+
+/* Centra el texto */
+text-align: center;
+
+/* Espacio interno */
+padding: 30px;
+
+}
+
+/* CONTENEDOR */
+.main-container {
+
+/* Espaciado interno */
+padding: 20px 50px;
+
+}
+
+/* TITULO */
+.title-section {
+
+/* Espacio debajo del titulo */
+margin-bottom: 20px;
+
+}
+
+/* BARRA SUPERIOR */
+.top-bar {
+
+/* Coloca los elementos en fila */
+display: flex;
+
+/* Separa los elementos a los extremos */
+justify-content: space-between;
+
+/* Espacio debajo */
+margin-bottom: 25px;
+
+}
+
+/* BOTON */
+.btn-nuevo-medicamento {
+
+/* Color del boton */
+background-color: var(--btn-blue);
+
+/* Color del texto */
+color: white;
+
+/* Quita borde */
+border: none;
+
+/* Espaciado interno */
+padding: 10px 20px;
+
+/* Bordes redondeados */
+border-radius: 8px;
+
+/* Texto en negrita */
+font-weight: bold;
+
+/* Cambia el cursor */
+cursor: pointer;
+
+}
+
+/* Efecto cuando se pasa el mouse */
+.btn-nuevo-medicamento:hover {
+
+/* Hace el boton un poco transparente */
+opacity: 0.9;
+
+}
+
+/* BUSCADOR */
+.search-box {
+
+/* Color de fondo */
+background-color: #bcbcbc;
+
+/* Bordes redondeados */
+border-radius: 20px;
+
+/* Espaciado interno */
+padding: 8px 15px;
+
+/* Elementos en fila */
+display: flex;
+
+/* Alinea verticalmente */
+align-items: center;
+
+/* Ancho del buscador */
+width: 400px;
+
+}
+
+.search-box input {
+
+/* Fondo transparente */
+background: transparent;
+
+/* Quita borde */
+border: none;
+
+/* Quita el borde al hacer click */
+outline: none;
+
+/* Espacio entre iconos */
+margin: 0 10px;
+
+/* Ocupa el espacio restante */
+flex: 1;
+
+}
+
+/* TABLA */
+.table-container {
+
+/* Fondo blanco */
+background-color: white;
+
+/* Borde grueso */
+border: 10px solid var(--table-border);
+
+/* Espaciado interno */
+padding: 20px;
+
+}
+
+/* GRID */
+.inventory-grid {
+
+/* Usa grid layout */
+display: grid;
+
+/* Define el tamaño de cada columna */
+grid-template-columns:
+0.6fr
+1.6fr
+1.5fr
+1.3fr
+1fr
+1fr;
+
+/* Espacio entre celdas */
+gap: 15px;
+
+}
+
+/* CELDAS */
+.header-item,
+.cell {
+
+/* Fondo gris */
+background-color: var(--gray-bg);
+
+/* Espaciado interno */
+padding: 15px;
+
+/* Centra el texto */
+text-align: center;
+
+/* Texto en negrita */
+font-weight: bold;
+
+}
+
+.cell {
+
+/* El contenido normal no es negrita */
+font-weight: normal;
+
+}
+
+/* ACCIONES */
+.actions-cell {
+
+/* Alinea botones en fila */
+display: flex;
+
+/* Espacio entre botones */
+justify-content: space-around;
+
+/* Alineacion vertical */
+align-items: center;
+
+/* Fondo blanco */
+background-color: white !important;
+
+}
+
+.actions-cell button {
+
+/* Quita fondo */
+background: none;
+
+/* Quita borde */
+border: none;
+
+/* Cursor de clic */
+cursor: pointer;
+
+/* Tamaño del icono */
+font-size: 1.2rem;
+
+/* Animacion suave */
+transition: transform 0.2s;
+
+}
+
+/* Efecto al pasar el mouse */
+.actions-cell button:hover {
+
+/* Hace el icono mas grande */
+transform: scale(1.2);
+
+}
+
+/* Colores de botones */
+.btn-editar { color: #2c3e50; }
+.btn-eliminar { color: #000000; }
+.btn-estado { color: #2c3e50; }
