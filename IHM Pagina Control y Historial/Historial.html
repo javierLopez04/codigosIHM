@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial de Ventas</title>
+    <link rel="stylesheet" href="estiloHistorial.css">
+</head>
+<body>
+
+    <h1 class="titulo">Sistema de Inventario de farmacia</h1>
+
+    <div class="container">
+
+        <h2>Historial De Ventas</h2>
+
+        <div class="filtros">
+            <input type="text" id="searchVentas" placeholder="Buscar por usuario o ID...">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuario</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaVentas">
+               
+            </tbody>
+        </table>
+          <div class="botones">
+            <button>Generar Reporte</button>
+            <button>Exportar PDF</button>
+            <button>Exportar Excel</button>
+        </div>
+
+
+    </div>
+
+    <script src="scriptHistorial.js" defer></script>
+</body>
+</html>

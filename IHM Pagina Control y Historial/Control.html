@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario Farmacia</title>
+    <link rel="stylesheet" href="estiloControl.css">
+</head>
+<body>
+
+  
+    <h1 class="titulo">Sistema de Inventario de farmacia</h1>
+
+    <div class="container">
+
+        <h2>Control De Vencimiento</h2>
+
+        <div class="filtros">
+            <input type="text" id="search" placeholder="Buscar...">
+
+            <select>
+                <option>Droga</option>
+                <option>Ibuprofeno</option>
+                <option>Acetaminofen</option>
+                <option>Betametazona</option>
+                <option >Paracetamol</option>
+                <option >Nolotil</option>
+                <option >Amoxicilina</option>
+                <option>Insulina</option>
+                <option >Azitromicina</option>
+                <option >Sintrom</option>
+                <option >Eutirox</option>
+            </select>
+
+            <select>
+                <option>Estado</option>
+                <option>Disponible</option>
+                <option>Vencido</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Medicamentos</th>
+                    <th>ID</th>
+                    <th>Vencimiento</th>
+                    <th>Estado</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaBody">
+               
+            </tbody>
+        </table>
+
+        <div class="botones">
+            <button>Generar Reporte</button>
+            <button>Exportar PDF</button>
+            <button>Exportar Excel</button>
+        </div>
+
+    </div>
+
+    <script src="scriptControl.js"></script>
+</body>
+</html>
