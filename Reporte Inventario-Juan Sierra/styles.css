@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background: #e6e6e6;
+    border: 3px solid #2ecc71;
+}
+
+
+
+header {
+    background: #2ecc71;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* SECCIÓN */
+section {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.filtros input,
+.filtros select {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-fecha {
+    padding: 8px 15px;
+    background: #5dade2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Tabla */
+.tabla-container {
+    border: 3px solid #a9c7f0;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+th {
+    background: #bfbfbf;
+    padding: 10px;
+}
+
+td {
+    background: #d9d9d9;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.reporte-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* tamaño de tabla */
+.reporte-box table {
+    width: 65%;
+}
+
+/* imagen */
+.imagen {
+    width: 350px;
+    height: 200px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+
+.imagen img {
+    width: 80%;   
+    height: auto;
+    border-radius: 40px;
+}
+
+/* Botones */
+.botones {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.botones button {
+    background: #5dade2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte Inventario</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    
+    <header>
+        <h1>Sistema de Inventario de farmacia</h1>
+    </header>
+
+    <section>
+        <h2>Reporte Inventario</h2>
+
+        
+        <div class="filtros">
+            <input type="text" placeholder="Buscar">
+
+            <select>
+                <option>Categoría</option>
+            </select>
+
+            <button class="btn-fecha" onclick="fecha()">fecha</button>
+        </div>
+
+        
+        <div class="tabla-container reporte-box">
+
+            <!-- TABLA -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>ID</th>
+                        <th>Cantidad</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Diclofenaco</td>
+                        <td>4622</td>
+                        <td>50422</td>
+                        <td>Disponible</td>
+                    </tr>
+
+                    <tr>
+                        <td>Paracetamol</td>
+                        <td>65654</td>
+                        <td>4000</td>
+                        <td>Disponible</td>
+                    </tr>
+
+                    <tr>
+                        <td>Amoxacilina</td>
+                        <td>684651</td>
+                        <td>000</td>
+                        <td>No Disponible</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!--  IMAGEN -->
+            <div class="imagen">
+                <p> <img src="imagenes/imagen 1.jpg" ></p>
+            </div>
+
+        </div>
+
+        <!-- BOTONES -->
+        <div class="botones">
+            <button onclick="reporte()">Generar Reporte</button>
+            <button onclick="pdf()">Exportar PDF</button>
+            <button onclick="excel()">Exportar Excel</button>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
