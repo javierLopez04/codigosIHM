@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Inventario</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    
+    <header>
+        <h1>Sistema de Inventario de farmacia</h1>
+    </header>
+
+    
+    <section>
+        <h2>Gestionar Usuarios</h2>
+
+        
+        <div class="filtros">
+            <input type="text" placeholder="Buscar">
+            
+            <select>
+                <option>Rol</option>
+                <option>Admin</option>
+                <option>Usuario</option>
+            </select>
+
+            <select>
+                <option>Estado</option>
+                <option>Activo</option>
+                <option>Inactivo</option>
+            </select>
+        </div>
+
+        <!-- TABLA -->
+        <div class="tabla-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>ID</th>
+                        <th>Correo</th>
+                        <th>Estado</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Juan Sierra</td>
+                        <td>001</td>
+                        <td>juan@gmail.com</td>
+                        <td>Activo</td>
+                        <td>Admin</td>
+                        <td class="acciones">
+                            <button onclick="ver()">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button onclick="editar()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button onclick="eliminar()">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Paola Rodriguez</td>
+                        <td>002</td>
+                        <td>Paola@gmail.com</td>
+                        <td>Activo</td>
+                        <td>Usuario</td>
+                        <td class="acciones">
+                            <button onclick="ver()">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button onclick="editar()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button onclick="eliminar()">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Carlos Diaz</td>
+                        <td>003</td>
+                        <td>carlos@gmail.com</td>
+                        <td>Inactivo</td>
+                        <td>Usuario</td>
+                        <td class="acciones">
+                            <button onclick="ver()">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button onclick="editar()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button onclick="eliminar()">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="botones">
+            <button onclick="reporte()">Generar Reporte</button>
+            <button onclick="pdf()">Exportar PDF</button>
+            <button onclick="excel()">Exportar Excel</button>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
